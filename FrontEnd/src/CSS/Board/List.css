@@ -1,0 +1,139 @@
+.listComponent
+{
+    width: 290px;
+    height: 500px;
+    background-color: rgb(240, 243, 236);
+    overflow:auto;
+    scroll-behavior:smooth;
+    margin: 8px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px black;
+}
+.listTop
+{
+    position:absolute;
+    width: 260px;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: rgb(176, 191, 66);
+}
+.listName
+{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.listCancel
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.line{
+    border-bottom: 2px solid black;
+}
+.AddCard
+{
+    position: relative;
+    right: -185px;
+    top: 10px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 23px;
+    cursor: pointer;
+}
+.allCards
+{
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.listNameContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+.listName {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+.editLogo {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .listNameContainer.editMode .listName {
+    display: none;
+  }
+  
+  .listNameContainer.editMode .editLogo {
+    display: inline-block;
+  }
+
+.listNameContainer .listNameEditInput
+{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 130px;
+    padding-right: 35px;
+    font-size: 16px;
+}
+
+.editLogo.cancelEdit
+{
+    position: absolute;
+    margin-right: 10PX;
+    color: red;
+}
+.editLogo.saveEdit
+{
+    position: absolute;
+    margin-right: -10PX;
+    color: rgb(5, 166, 24);
+}
+.editModeIcon {
+    font-size: 17px;
+    margin-right: 7px;
+    color: darkslategray;
+}
+
+.errorMsg
+{
+    font-size: 13px;
+    margin-top: -4px;
+    margin-left: 15px;
+    color: rgb(186, 22, 22);
+    font-weight: 500;
+}

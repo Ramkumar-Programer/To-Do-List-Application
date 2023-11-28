@@ -1,0 +1,227 @@
+/* .reg{
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    padding: 0 10px;
+    background-color: rgb(210, 210, 203);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    color: #fff;
+    background: #6665ee;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .form{
+    background: #eceaea;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .form form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+.container .form form .forget-pass{
+    margin: -15px 0 15px 0;
+}
+.container .form form .forget-pass a{
+   font-size: 15px;
+}
+.container .form form .button{
+    background: #6665ee;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.container .form form .button:hover{
+    background: #5757d1;
+}
+.container .form form .link{
+    padding: 5px 0;
+}
+.container .form form .link a{
+    color: #6665ee;
+}
+.container .login-form form p{
+    font-size: 14px;
+}
+.container .row .alert{
+    font-size: 14px;
+}
+.pad
+{
+    padding-bottom: 20px;
+}
+.container .row .alert{
+    font-size: 14px;
+}
+.inputError
+{
+    border-color: red;
+} */
+
+.reg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 172, 157);
+    width: 100%;
+    height: 100vh;
+}
+
+.reg .loginForm
+{
+    width: 340px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgb(71, 68, 68);
+}
+
+.reg .loginForm .titleOne
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+.reg .loginForm .titleTwo
+{
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.reg .loginForm .divInputBox
+{
+    padding-top: 10px;
+    width: 100%;
+}
+.reg .loginForm .divInputBox .inputValue,
+.reg .loginForm .divInputBox .inputValueEmail,
+.reg .loginForm .divInputBox  .inputValueOTP,
+.reg .loginForm .divInputBox .inputValueSubmit
+{
+    width: 98%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.reg .loginForm .divInputBox .inputValueEmail
+{
+    width: 76%;
+}
+
+.email,
+.divInputBox.otp
+{
+    display: flex;
+}
+.verfiyOpt
+{
+    margin-left: 7px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(76, 43, 207);
+    color: #fff;
+    width: 58px;
+}
+
+.verfiyOpt.button,
+.verfiyOptSumbit.button,
+.verfiyOptCancel.button
+{
+    width: 58px;
+}
+
+.verfiyOpt.button > img,
+.verfiyOptSumbit.button > img,
+.verfiyOptCancel.button > img,
+.inputValueSubmit.button > img,
+.submit-btn.button > img {
+    max-width: 25px;
+}
+
+.reg .loginForm .divInputBox .inputValueOTP
+{
+    padding-left: 20px;
+    width: 53%;
+}
+
+.reg .loginForm .divInputBox .verfiyOptSumbit,
+.reg .loginForm .divInputBox .verfiyOptCancel
+{
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.reg .loginForm .divInputBox .verfiyOptSumbit
+{
+    background-color: rgb(124, 182, 38);
+}
+.reg .loginForm .divInputBox .verfiyOptCancel
+{
+    background-color: rgb(227, 56, 56);
+}
+
+.reg .loginForm .divInputBox .inputValue.inputError,
+.reg .loginForm .divInputBox .inputValueEmail.inputError
+.reg .loginForm .divInputBox  .inputValueOTP.inputError
+{
+    border: 2px solid red;
+}
+.reg .loginForm .divInputBox .textError
+{
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.reg .loginForm .divInputBox .inputValueSubmit
+{
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+}
+
+.reg .loginForm .checkBox {
+    cursor: pointer;
+    margin: 5px;
+    width: 96%;
+}
+.reg .loginForm .checkBox .title
+{
+    font-size: 14px;
+}
+.reg .loginForm .divInputBox .passwordErrorMsgList
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reg .loginForm .divInputBox .passwordErrorMsgList .textError
+{
+    width: 160px;
+}
